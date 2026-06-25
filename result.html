@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"/>
+<title>Result – BSTE Pakistan</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ TOP INFO BAR ══════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <div class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:13px;height:13px;"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 15v-4H7l5-9v4h4l-5 9z"/></svg>
+        ISO 9001:2015 CERTIFIED
+      </div>
+      <div class="topbar-divider"></div>
+      <div class="topbar-item">Office Timing: Monday–Friday 08:00 AM – 04:00 PM</div>
+    </div>
+    <div class="topbar-right">
+      <span>📧 info.bste.com.pk</span>
+      <div class="topbar-divider"></div>
+      <span>🌐 www.bste.com.pk</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ LOGO BAR ═══════════════════════════════════════════════ -->
+<div class="logobar">
+  <div class="logobar-inner">
+    <a href="index.html" class="logo-area">
+      <div class="logo-svg-wrap">
+        <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+          <rect width="72" height="72" rx="10" fill="#06623d"/>
+          <path d="M36 8 L60 18 L60 36 C60 50 48 61 36 65 C24 61 12 50 12 36 L12 18 Z" fill="none" stroke="#16a085" stroke-width="2.5"/>
+          <path d="M36 13 L56 22 L56 36 C56 48 46 57 36 61 C26 57 16 48 16 36 L16 22 Z" fill="rgba(22,160,133,0.15)"/>
+          <text x="22" y="46" font-family="Arial Black,sans-serif" font-size="26" font-weight="900" fill="white" letter-spacing="-1">B</text>
+          <circle cx="48" cy="22" r="2" fill="#1abc9c"/>
+          <circle cx="54" cy="28" r="1.5" fill="#1abc9c" opacity="0.7"/>
+          <circle cx="44" cy="16" r="1.5" fill="#1abc9c" opacity="0.7"/>
+          <rect x="8" y="54" width="56" height="12" rx="3" fill="rgba(22,160,133,0.25)"/>
+          <text x="36" y="63" font-family="Arial,sans-serif" font-size="6.5" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">BSTE · PAK</text>
+        </svg>
+      </div>
+      <div class="logo-text-area">
+        <h1>BSTE</h1>
+        <span>Board of Science &amp; Technology Education</span>
+        <span style="font-size:0.65rem;color:#16a085;font-weight:600;letter-spacing:0.5px;">Pakistan</span>
+      </div>
+    </a>
+    <div class="logobar-right">
+      <div class="logobar-contact">
+        <div class="logobar-contact-item">📧 <strong>info.bste.com.pk</strong></div>
+        <div class="logobar-contact-item">📍 <strong>Pakistan</strong></div>
+      </div>
+      <a href="verification.html" class="btn-teal" style="font-size:0.82rem;padding:10px 20px;">🔍 Verify Certificate</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html"          onclick="closeMenu()">Home</a>
+      <a href="index.html#academic-scope" onclick="closeMenu()">Academic Scope</a>
+      <a href="verification.html"   class="active" onclick="closeMenu()">Verification</a>
+      <a href="index.html#about-us" onclick="closeMenu()">About Us</a>
+      <a href="verification.html"   class="nav-verify-btn" onclick="closeMenu()">🔍 Verify Certificate</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ TICKER ════════════════════════════════════════════════ -->
+<div class="ticker-wrap">
+  <div class="ticker-label">📢 Notifications</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes nationwide</span>
+      <span>Certificate verification portal is live — Verify any BSTE credential online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>Annual Technical Examination Results 2025 announced — Check your result online now</span>
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes nationwide</span>
+      <span>Certificate verification portal is live — Verify any BSTE credential online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>Annual Technical Examination Results 2025 announced — Check your result online now</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PAGE TITLE BAR ════════════════════════════════════════ -->
+<div style="background:#06623d;color:#fff;padding:10px 24px;font-size:0.85rem;font-weight:700;letter-spacing:0.3px;border-bottom:2px solid #16a085;">
+  <div style="max-width:1280px;margin:0 auto;">🏠 Home &nbsp;›&nbsp; Verification &nbsp;›&nbsp; Result</div>
+</div>
+
+<!-- ══ RESULT CONTENT ════════════════════════════════════════ -->
+<div class="result-bg" id="resultBg">
+
+  <div class="result-top-actions">
+    <a href="verification.html" class="btn-action btn-action-outline">← New Search</a>
+    <button class="btn-action btn-action-teal" onclick="downloadPDF()">⬇ Download PDF</button>
+    <button class="btn-action btn-action-primary" onclick="window.print()">🖨 Print</button>
+  </div>
+
+  <!-- A4 Document -->
+  <div class="result-doc" id="resultDocument">
+
+    <div class="result-doc-watermark">BSTE</div>
+
+    <!-- Document Header -->
+    <div class="result-doc-header">
+      <div class="result-doc-logo-row">
+        <div class="result-doc-logo-svg">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <rect width="72" height="72" rx="10" fill="rgba(255,255,255,0.12)"/>
+            <path d="M36 6 L58 16 L58 34 C58 48 47 58 36 62 C25 58 14 48 14 34 L14 16 Z" fill="none" stroke="#1abc9c" stroke-width="2"/>
+            <text x="19" y="44" font-family="Arial Black,sans-serif" font-size="24" font-weight="900" fill="white" letter-spacing="-1">B</text>
+            <rect x="6" y="53" width="60" height="12" rx="3" fill="rgba(26,188,156,0.3)"/>
+            <text x="36" y="62" font-family="Arial,sans-serif" font-size="6" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">BSTE · PAK</text>
+          </svg>
+        </div>
+        <div class="result-doc-org">
+          <h3>BOARD OF SCIENCE &amp; TECHNOLOGY EDUCATION</h3>
+          <span>Official Certificate Verification Document — Pakistan</span>
+        </div>
+      </div>
+      <div class="result-doc-badge">
+        <h2>Verification Result</h2>
+        <span id="docDate">—</span>
+      </div>
+    </div>
+
+    <!-- Document Body -->
+    <div class="result-doc-body">
+
+      <div class="result-name-bar">
+        <div>
+          <h3 id="sName">—</h3>
+          <span id="sFather">S/O —</span>
+        </div>
+        <div class="grade-circle" id="sGradeBadge">—</div>
+      </div>
+
+      <div class="result-grid">
+        <div class="result-field">
+          <div class="result-field-label">Roll Number</div>
+          <div class="result-field-value" id="sRoll">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Registration No.</div>
+          <div class="result-field-value" id="sReg">—</div>
+        </div>
+        <div class="result-field" style="grid-column:1/-1;">
+          <div class="result-field-label">Program / Course</div>
+          <div class="result-field-value" id="sCourse">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Passing Year</div>
+          <div class="result-field-value" id="sYear">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Issuing Authority</div>
+          <div class="result-field-value">BSTE Pakistan</div>
+        </div>
+      </div>
+
+      <table class="result-table">
+        <thead>
+          <tr><th>Description</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Total Marks</td><td id="sTotal">—</td></tr>
+          <tr><td>Marks Obtained</td><td id="sObt">—</td></tr>
+          <tr><td>Percentage</td><td id="sPer">—</td></tr>
+          <tr><td>Grade</td><td id="sGrade">—</td></tr>
+          <tr><td>Result</td><td style="color:#06623d;font-weight:700;">PASS ✓</td></tr>
+        </tbody>
+      </table>
+
+      <div class="result-bar-wrap">
+        <div class="result-bar-head">
+          <span>Performance</span>
+          <span id="barPct">—</span>
+        </div>
+        <div class="result-bar-track">
+          <div class="result-bar-fill" id="barFill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <div class="result-qr-row">
+        <div class="result-qr-area">
+          <img id="qrImg"
+            src=""
+            alt="QR Code"
+            onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=76x76&data=BSTE-VERIFIED'"
+          />
+          <div class="result-qr-text">
+            <strong>Scan to Verify</strong>
+            Scan QR code to confirm<br/>
+            document authenticity online.
+          </div>
+        </div>
+        <div class="result-stamp">✔ VERIFIED</div>
+      </div>
+
+    </div>
+
+    <div class="result-doc-footer">
+      <span>Board of Science &amp; Technology Education — Pakistan</span>
+      <span>📧 info.bste.com.pk</span>
+      <span id="footerDate">—</span>
+    </div>
+
+  </div><!-- /result-doc -->
+
+  <div class="result-top-actions" style="margin-top:18px;">
+    <a href="verification.html" class="btn-action btn-action-outline">← New Search</a>
+    <button class="btn-action btn-action-teal" onclick="downloadPDF()">⬇ Download PDF</button>
+  </div>
+
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo-area" style="margin-bottom:16px;">
+        <div class="logo-svg-wrap" style="width:52px;height:52px;">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <rect width="72" height="72" rx="10" fill="#06623d"/>
+            <path d="M36 8 L60 18 L60 36 C60 50 48 61 36 65 C24 61 12 50 12 36 L12 18 Z" fill="none" stroke="#16a085" stroke-width="2.5"/>
+            <text x="22" y="46" font-family="Arial Black,sans-serif" font-size="26" font-weight="900" fill="white" letter-spacing="-1">B</text>
+            <rect x="8" y="54" width="56" height="12" rx="3" fill="rgba(22,160,133,0.25)"/>
+            <text x="36" y="63" font-family="Arial,sans-serif" font-size="6.5" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">BSTE · PAK</text>
+          </svg>
+        </div>
+        <div class="logo-text-area">
+          <h1 style="font-size:0.95rem;">BSTE</h1>
+          <span>Board of Science &amp; Technology Education</span>
+        </div>
+      </div>
+      <p>The Board of Science &amp; Technology Education (BSTE) is Pakistan's authoritative body for standardizing technical and scientific curricula, issuing recognized credentials, and accrediting vocational training institutes across the country.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#academic-scope">Academic Scope</a></li>
+        <li><a href="verification.html">Certificate Verification</a></li>
+        <li><a href="index.html#about-us">About BSTE</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="index.html#academic-scope">Civil Engineering</a></li>
+        <li><a href="index.html#academic-scope">IT &amp; Computing</a></li>
+        <li><a href="index.html#academic-scope">Electrical Technology</a></li>
+        <li><a href="index.html#academic-scope">Telecommunications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">📍</div>
+        <div class="footer-contact-text">Board of Science &amp; Technology Education, Pakistan</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">✉️</div>
+        <div class="footer-contact-text">info.bste.com.pk</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">🌐</div>
+        <div class="footer-contact-text">www.bste.com.pk</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Board of Science &amp; Technology Education (BSTE) — Pakistan. All Rights Reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="verification.html">Verify Certificate</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ══ GITHUB CONFIGURATION ══════════════════════════════════
+   Replace with your actual GitHub username and repository.
+══════════════════════════════════════════════════════════ */
+const GITHUB_USER   = "YOUR_USERNAME";
+const GITHUB_REPO   = "YOUR_REPO";
+const GITHUB_BRANCH = "main";
+function ghRaw(path){ return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`; }
+
+/* ── Parse URL params ── */
+const p = new URLSearchParams(window.location.search);
+const roll   = p.get('roll')   || '';
+const year   = p.get('year')   || '';
+const name   = p.get('name')   || '';
+const father = p.get('father') || '';
+const reg    = p.get('reg')    || '';
+const course = p.get('course') || '';
+const total  = p.get('total')  || '';
+const obt    = p.get('obt')    || '';
+const per    = p.get('per')    || '';
+const grade  = p.get('grade')  || '';
+
+if(!roll){ window.location.href = 'verification.html'; }
+
+/* ── Populate ── */
+document.getElementById('sName').textContent       = name;
+document.getElementById('sFather').textContent     = 'S/O ' + father;
+document.getElementById('sGradeBadge').textContent = grade;
+document.getElementById('sRoll').textContent       = roll;
+document.getElementById('sReg').textContent        = reg;
+document.getElementById('sCourse').textContent     = course;
+document.getElementById('sYear').textContent       = year;
+document.getElementById('sTotal').textContent      = total;
+document.getElementById('sObt').textContent        = obt;
+document.getElementById('sPer').textContent        = per;
+document.getElementById('sGrade').textContent      = grade;
+document.getElementById('barPct').textContent      = per;
+
+/* ── Progress bar ── */
+const pNum = parseFloat(per);
+if(!isNaN(pNum)) setTimeout(()=>{ document.getElementById('barFill').style.width = Math.min(pNum,100)+'%'; }, 400);
+
+/* ── Dates ── */
+const today = new Date().toLocaleDateString('en-PK',{day:'2-digit',month:'long',year:'numeric'});
+document.getElementById('docDate').textContent    = 'Verified: ' + today;
+document.getElementById('footerDate').textContent = today;
+
+/* ── QR Image from GitHub ── */
+document.getElementById('qrImg').src = ghRaw('resultqr.png');
+
+/* ── Download PDF ── */
+function downloadPDF(){
+  const url = ghRaw(`students/${roll}.pdf`);
+  const a = document.createElement('a');
+  a.href = url; a.download = `BSTE_Certificate_${roll}.pdf`;
+  a.target = '_blank'; document.body.appendChild(a);
+  a.click(); document.body.removeChild(a);
+}
+
+function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
+function closeMenu() { document.getElementById('navLinks').classList.remove('open'); }
+</script>
+</body>
+</html>
